@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intitial-scale=1">
+        <meta name="author" content="Junhee Hays">
+        <title>Purse wishlist by Junhee</title>
+
+        <!-- Google Fonts CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet" type="text/css">
+        <!-- Style CSS -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="intro">
+            <h1>Junhee's Purse Wishlist</h1>
+
+            <div class="action">
+                <a href="README.md" title="README" class="btn back">About this wishlist</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="wrapper">
+                <header>
+                    Purse Wishlist
+                </header>
+
+                <main>
+                    <form>
+                        <label for="item-input">Item</label>
+                        <input type="text" id="item-input">
+                        <label for="item-link">Link</label>
+                        <input type="url" id="link-address">
+                        <button type="submit" id="submit-btn">Add</button>
+                    </form>
+
+                    <div id="lists">
+                        <p class="list__label">Still wishing for it <span class="quantity" id="wish-num"></span></p>
+                        <ul id="wish-list"></ul>
+                        <p class="list__label">Mine now<span class="quantity" id="bought-num"></span></p>
+                        <ul id="bought-list"></ul>
+                    </div>
+                </main>
+                <div class="push"></div>
+            </div>
+
+            <footer>
+                <a href="README.md" target="_blank">About this wishlist</a>
+            </footer>
+
+        </main>
+        <footer class="credit">Junhee Hays</footer>
+        <!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+<!-- Lodash JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+<!-- Backbone JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js'></script>
+<!-- Wish List JS -->
+<script src="./js/script.js"></script>
+    </body>
+</html>
